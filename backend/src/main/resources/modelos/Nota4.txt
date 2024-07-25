@@ -1,0 +1,187 @@
+
+NOTA DE CORRETAGEM
+ Nr. nota Folha Data pregão
+45192649 1 05/10/2023
+BTG Pactual CTVM S.A.
+Avenida Brigadeiro Faria Lima, 3477 - 14º Andar ITAIM BIBI 04538-133 SÃO PAULO - SP
+Tel: (011) 3046 - 2100 / 3443 - 2100
+Internet: https://investimentos.empiricus.com.br/ e-mail: atendimentoinvestimentos@btgpactual.com
+C.N.P.J: 43.815.158/0001-22 Carta Patente:
+SAC: 0800-722-2827  Ouvidoria: Tel. 0800-722-0048 e-mail ouvidoria: ouvidoria@btgpactual.com
+ Cliente C.P.F./C.N.P.J/C.V.M./C.O.B.
+004789172 EVANDRO CARLOS TOREZAN
+831.783.259-72
+QUADRA 101, 8 - APTO 408-B 71907180 BRASILIA DISTRITO Tel. (61) 32975776
+ Código cliente Assessor
+FEDERAL
+85-0 004789172
+ Participante destino do repasse Cliente Valor Custodiante C.I
+1026 - 0 N
+ Banco Agência Conta Corrente Acionista Administrador Complemento nome P.Vinc
+N
+Negócios realizados
+Q Negociação C/V Tipo Mercado Prazo Especificação do título Obs. (*) Quantidade Preço / Ajuste Valor Operação / Ajuste D/C
+1-BOVESPA V VISTA AAPL34 62 45,00 2.790,00 C
+1-BOVESPA V VISTA NVDC34 52 48,00 2.496,00 C
+1-BOVESPA C VISTA UNIP6F 5 77,99 389,95 D
+Resumo dos Negócios Resumo Financeiro
+Debêntures 0,00 Clearing
+Vendas à vista 5.286,00 Valor líquido das operações 4.896,05 C
+Compras à vista 389,95 Taxa de liquidação 1,41 D
+Opções - compras 0,00 Taxa de Registro 0,00
+Opções - vendas 0,00 Total CBLC 4.894,64 C
+Operações à termo 0,00 Bolsa
+Valor das oper. c/ títulos públ. (v. nom.) 0,00 Taxa de termo/opções 0,00
+Valor das operações 5.675,95 Taxa A.N.A. 0,00
+Emolumentos 0,28 D
+Total Bovespa / Soma 0,28 D
+Especificações diversas Corretagem / Despesas
+A coluna Q indica liquidação no Agente do Qualificado. Clearing 0,00
+Execução 0,00
+Execução casa 0,00
+ISS* (SÃO PAULO - SP) 0,00
+I.R.R.F. s/ operações, base R$ 5.286,00 0,26
+Outras Bovespa 0,00
+Total corretagem / Despesas 0,00
+Líquido para 09/10/2023
+4.894,36 C
+(*) Observações
+A - Posição futuro T - Liquidação pelo
+Observações:
+2 - Corretora ou pessoa vinculada atuou C - Clubes e fundos de (1) As operações a termo não são computadas no líquido da fatura.
+I - POP
+(2) IR fonte à alíquota de 0,005% somente serão debitados em sua conta corrente, a
+# - Negócio direto P - Carteira Própria
+partir do momento em que o IRRF for superior à R$ 1,00, no respectivo mês calendário.
+8 - Liquidação Institucional H - Home Broker
+(3) Valor mínimo de IR fonte à alíquota de 0,005% não se aplica para FII e ETF.
+D - Day Trade X - Box
+(4) IR fonte Day Trade de 1% não é descontado no líquido da nota. O débito será feito
+F - Cobertura Y - Desmanche de Box diretamente na conta do cliente.
+B - Debêntures L - Precatório
+(5) ISS*  contempla o ISS do município PIS / COFINS.
+Atendimento: 0800-722-2827 Ouvidoria: 0800-722-0048
+https://investimentos.empiricus.com.br/
+NOTA DE CORRETAGEM
+ Nr. nota Folha Data pregão
+45218637 1 06/10/2023
+BTG Pactual CTVM S.A.
+Avenida Brigadeiro Faria Lima, 3477 - 14º Andar ITAIM BIBI 04538-133 SÃO PAULO - SP
+Tel: (011) 3046 - 2100 / 3443 - 2100
+Internet: https://investimentos.empiricus.com.br/ e-mail: atendimentoinvestimentos@btgpactual.com
+C.N.P.J: 43.815.158/0001-22 Carta Patente:
+SAC: 0800-722-2827  Ouvidoria: Tel. 0800-722-0048 e-mail ouvidoria: ouvidoria@btgpactual.com
+ Cliente C.P.F./C.N.P.J/C.V.M./C.O.B.
+004789172 EVANDRO CARLOS TOREZAN
+831.783.259-72
+QUADRA 101, 8 - APTO 408-B 71907180 BRASILIA DISTRITO Tel. (61) 32975776
+ Código cliente Assessor
+FEDERAL
+85-0 004789172
+ Participante destino do repasse Cliente Valor Custodiante C.I
+1026 - 0 N
+ Banco Agência Conta Corrente Acionista Administrador Complemento nome P.Vinc
+N
+Negócios realizados
+Q Negociação C/V Tipo Mercado Prazo Especificação do título Obs. (*) Quantidade Preço / Ajuste Valor Operação / Ajuste D/C
+1-BOVESPA V VISTA DISB34 128 28,00 3.584,00 C
+1-BOVESPA C VISTA VAMO3 ON 100 8,50 850,00 D
+Resumo dos Negócios Resumo Financeiro
+Debêntures 0,00 Clearing
+Vendas à vista 3.584,00 Valor líquido das operações 2.734,00 C
+Compras à vista 850,00 Taxa de liquidação 1,10 D
+Opções - compras 0,00 Taxa de Registro 0,00
+Opções - vendas 0,00 Total CBLC 2.732,90 C
+Operações à termo 0,00 Bolsa
+Valor das oper. c/ títulos públ. (v. nom.) 0,00 Taxa de termo/opções 0,00
+Valor das operações 4.434,00 Taxa A.N.A. 0,00
+Emolumentos 0,22 D
+Total Bovespa / Soma 0,22 D
+Especificações diversas Corretagem / Despesas
+A coluna Q indica liquidação no Agente do Qualificado. Clearing 0,00
+Execução 0,00
+Execução casa 0,00
+ISS* (SÃO PAULO - SP) 0,00
+I.R.R.F. s/ operações, base R$ 3.584,00 0,17
+Outras Bovespa 0,00
+Total corretagem / Despesas 0,00
+Líquido para 10/10/2023
+2.732,68 C
+(*) Observações
+A - Posição futuro T - Liquidação pelo
+Observações:
+2 - Corretora ou pessoa vinculada atuou C - Clubes e fundos de (1) As operações a termo não são computadas no líquido da fatura.
+I - POP
+(2) IR fonte à alíquota de 0,005% somente serão debitados em sua conta corrente, a
+# - Negócio direto P - Carteira Própria
+partir do momento em que o IRRF for superior à R$ 1,00, no respectivo mês calendário.
+8 - Liquidação Institucional H - Home Broker
+(3) Valor mínimo de IR fonte à alíquota de 0,005% não se aplica para FII e ETF.
+D - Day Trade X - Box
+(4) IR fonte Day Trade de 1% não é descontado no líquido da nota. O débito será feito
+F - Cobertura Y - Desmanche de Box diretamente na conta do cliente.
+B - Debêntures L - Precatório
+(5) ISS*  contempla o ISS do município PIS / COFINS.
+Atendimento: 0800-722-2827 Ouvidoria: 0800-722-0048
+https://investimentos.empiricus.com.br/
+NOTA DE CORRETAGEM
+ Nr. nota Folha Data pregão
+45709098 1 20/10/2023
+BTG Pactual CTVM S.A.
+Avenida Brigadeiro Faria Lima, 3477 - 14º Andar ITAIM BIBI 04538-133 SÃO PAULO - SP
+Tel: (011) 3046 - 2100 / 3443 - 2100
+Internet: https://investimentos.empiricus.com.br/ e-mail: atendimentoinvestimentos@btgpactual.com
+C.N.P.J: 43.815.158/0001-22 Carta Patente:
+SAC: 0800-722-2827  Ouvidoria: Tel. 0800-722-0048 e-mail ouvidoria: ouvidoria@btgpactual.com
+ Cliente C.P.F./C.N.P.J/C.V.M./C.O.B.
+004789172 EVANDRO CARLOS TOREZAN
+831.783.259-72
+QUADRA 101, 8 - APTO 408-B 71907180 BRASILIA DISTRITO Tel. (61) 32975776
+ Código cliente Assessor
+FEDERAL
+85-0 004789172
+ Participante destino do repasse Cliente Valor Custodiante C.I
+1026 - 0 N
+ Banco Agência Conta Corrente Acionista Administrador Complemento nome P.Vinc
+N
+Negócios realizados
+Q Negociação C/V Tipo Mercado Prazo Especificação do título Obs. (*) Quantidade Preço / Ajuste Valor Operação / Ajuste D/C
+1-BOVESPA C EXERC OPC VENDA ITSAV901E 200 8,77 1.754,00 D
+Resumo dos Negócios Resumo Financeiro
+Debêntures 0,00 Clearing
+Vendas à vista 0,00 Valor líquido das operações 1.754,00 D
+Compras à vista 1.754,00 Taxa de liquidação 0,31 D
+Opções - compras 0,00 Taxa de Registro 0,00
+Opções - vendas 0,00 Total CBLC 1.754,31 D
+Operações à termo 0,00 Bolsa
+Valor das oper. c/ títulos públ. (v. nom.) 0,00 Taxa de termo/opções 0,00
+Valor das operações 1.754,00 Taxa A.N.A. 0,00
+Emolumentos 0,08 D
+Total Bovespa / Soma 0,08 D
+Especificações diversas Corretagem / Despesas
+A coluna Q indica liquidação no Agente do Qualificado. Clearing 0,00
+Execução 0,00
+Execução casa 0,00
+ISS* (SÃO PAULO - SP) 0,00
+I.R.R.F. s/ operações, base R$ 0,00 0,00
+Outras Bovespa 0,00
+Total corretagem / Despesas 0,00
+Líquido para 24/10/2023
+1.754,39 D
+(*) Observações
+A - Posição futuro T - Liquidação pelo
+Observações:
+2 - Corretora ou pessoa vinculada atuou C - Clubes e fundos de (1) As operações a termo não são computadas no líquido da fatura.
+I - POP
+(2) IR fonte à alíquota de 0,005% somente serão debitados em sua conta corrente, a
+# - Negócio direto P - Carteira Própria
+partir do momento em que o IRRF for superior à R$ 1,00, no respectivo mês calendário.
+8 - Liquidação Institucional H - Home Broker
+(3) Valor mínimo de IR fonte à alíquota de 0,005% não se aplica para FII e ETF.
+D - Day Trade X - Box
+(4) IR fonte Day Trade de 1% não é descontado no líquido da nota. O débito será feito
+F - Cobertura Y - Desmanche de Box diretamente na conta do cliente.
+B - Debêntures L - Precatório
+(5) ISS*  contempla o ISS do município PIS / COFINS.
+Atendimento: 0800-722-2827 Ouvidoria: 0800-722-0048
+https://investimentos.empiricus.com.br/

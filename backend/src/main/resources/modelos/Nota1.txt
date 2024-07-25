@@ -1,0 +1,63 @@
+
+NOTA DE CORRETAGEM
+ Nr. nota Folha Data pregão
+54483626 1 29/05/2024
+BTG Pactual CTVM S.A.
+Avenida Brigadeiro Faria Lima, 3477 - 14º Andar ITAIM BIBI 04538-133 SÃO PAULO - SP
+Tel: (011) 3046 - 2100 / 3443 - 2100
+Internet: www.btgpactual.com e-mail: atendimentoinvestimentos@btgpactual.com
+C.N.P.J: 43.815.158/0001-22 Carta Patente:
+SAC: 0800-722-2827  Ouvidoria: Tel. 0800-722-0048 e-mail ouvidoria: ouvidoria@btgpactual.com
+ Cliente C.P.F./C.N.P.J/C.V.M./C.O.B.
+0123456789 Neymar da Silva Santos Junior
+321.654.987-01
+QUADRA 900, 2 - 204-A 81110370 MACAE RIO DE Tel. (11) 985112957
+ Código cliente Assessor
+JANEIRO
+70-5 0123456789
+ Participante destino do repasse Cliente Valor Custodiante C.I
+1026 - 0 N
+ Banco Agência Conta Corrente Acionista Administrador Complemento nome P.Vinc
+N
+Negócios realizados
+Q Negociação C/V Tipo Mercado Prazo Especificação do título Obs. (*) Quantidade Preço / Ajuste Valor Operação / Ajuste D/C
+1-BOVESPA V VISTA LREN3 ON 400 13,26 5.304,00 C
+1-BOVESPA V VISTA LREN3F ON 20 13,25 265,00 C
+Resumo dos Negócios Resumo Financeiro
+Debêntures 0,00 Clearing
+Vendas à vista 5.569,00 Valor líquido das operações 5.569,00 C
+Compras à vista 0,00 Taxa de liquidação 1,39 D
+Opções - compras 0,00 Taxa de Registro 0,00
+Opções - vendas 0,00 Total CBLC 5.567,61 C
+Operações à termo 0,00 Bolsa
+Valor das oper. c/ títulos públ. (v. nom.) 0,00 Taxa de termo/opções 0,00
+Valor das operações 5.569,00 Taxa A.N.A. 0,00
+Emolumentos 0,27 D
+Total Bovespa / Soma 0,27 D
+Especificações diversas Corretagem / Despesas
+A coluna Q indica liquidação no Agente do Qualificado. Clearing 0,00
+Execução 0,00
+Execução casa 0,00
+ISS* (SÃO PAULO - SP) 0,00
+I.R.R.F. s/ operações, base R$ 5.569,00 0,27
+Outras Bovespa 0,00
+Total corretagem / Despesas 0,00
+Líquido para 03/06/2024
+5.567,34 C
+(*) Observações
+A - Posição futuro T - Liquidação pelo
+Observações:
+2 - Corretora ou pessoa vinculada atuou C - Clubes e fundos de (1) As operações a termo não são computadas no líquido da fatura.
+I - POP
+(2) IR fonte à alíquota de 0,005% somente serão debitados em sua conta corrente, a
+# - Negócio direto P - Carteira Própria
+partir do momento em que o IRRF for superior à R$ 1,00, no respectivo mês calendário.
+8 - Liquidação Institucional H - Home Broker
+(3) Valor mínimo de IR fonte à alíquota de 0,005% não se aplica para FII e ETF.
+D - Day Trade X - Box
+(4) IR fonte Day Trade de 1% não é descontado no líquido da nota. O débito será feito
+F - Cobertura Y - Desmanche de Box diretamente na conta do cliente.
+B - Debêntures L - Precatório
+(5) ISS*  contempla o ISS do município PIS / COFINS.
+Capitais e regiões metropolitanas: (011) 4007-2511   Demais localidades: 0800-001-2511 SAC: 0800-772-2827   Ouvidoria: 0800-722-0048
+www.btgpactual.com
