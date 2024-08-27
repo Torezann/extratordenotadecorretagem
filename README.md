@@ -54,8 +54,8 @@ O projeto está organizado nas seguintes módulos:
 
 4. **Acessar a aplicação pelo navegador**
 
-  Abra o seu navegador e digite:
+     Abra o seu navegador e digite:
 
-    http://localhost:5000
+       http://localhost:5000
 
-  Isso abrirá a aplicação para que você possa utilizar.
+     Isso abrirá a aplicação para que você possa utilizar.
