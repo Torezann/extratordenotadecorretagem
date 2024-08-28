@@ -27,9 +27,9 @@ O projeto está organizado nas seguintes módulos:
 
 ### Pré-requisitos
 
-- [Java 17](https://docs.gradle.org/current/userguide/installation.html)
-- Node 20
-- Gradle 8
+- [Java 17](https://www.oracle.com/java/technologies/downloads/#jdk17-windows)
+- [Node 20](https://nodejs.org/en/download/prebuilt-installer)
+- [Gradle 8](https://docs.gradle.org/current/userguide/installation.html)
 
 ### Passo a Passo
 
