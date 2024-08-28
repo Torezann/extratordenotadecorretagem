@@ -28,6 +28,7 @@ O projeto está organizado nas seguintes módulos:
 ### Pré-requisitos
 
 - [https://docs.gradle.org/current/userguide/installation.html Java 17]
+- [https://mediawiki.org MediaWiki]
 - Node 20
 - Gradle 8
 
