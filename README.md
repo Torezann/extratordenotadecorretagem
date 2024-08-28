@@ -41,7 +41,7 @@ O projeto está organizado nas seguintes módulos:
 
    Altere o valor da propriedade "diretorio-de-notas" no arquivo "appliaction.properties" como você quiser, desde que seja um diretório válido e com direito de escrita para o usuário do sistema operacional que irá executar o back-end.
 
-       \backend\src\main\resources\appliaction.properties
+         \backend\src\main\resources\appliaction.properties
 
 3. **Compilar e Executar o Back-end**
 
