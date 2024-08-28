@@ -1,4 +1,4 @@
-package br.torezan.extratordenotadecorretagem;
+package br.torezan.extratordenotadecorretagem.dto;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Iformações do PDF</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--    <link href="css/custom.css" rel="stylesheet">-->
+    <style>
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .box {
+            background-color: lightgray;
+            width: 80%;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .margem {
+            margin: 1rem;
+        }
+
+    </style>
+</head>
+<body style="background-color: gray">
+<%
+function formataNumero(valor) {
+    if (!valor) {
+        return "0,00"
+    }
+    let n = Number(valor).toFixed(2)
+    var parts = n.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    return parts.join(",");
+}
+%>
+<br>
+<h1 style="text-align: center">Nota de Corretagem <%= nota.numeroNota %>-<%= nota.folha %></h1>
+<br><br>
+<div class="container">
+    <div class="box" style="display: inline">
+        <h3 style="text-align: center">Dados da Nota</h3>
+        <br>
+        <div class="row mt-3 margem">
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Número da nota:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= nota.numeroNota %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Número da folha:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= nota.folha %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Data pregão:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= nota.dataPregao %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Nome da corretora:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= nota.nomeCorretora %></div>
+        </div>
+        <br>
+    </div>
+</div>
+</div>
+<div class="container">
+    <div class="box">
+        <h3 style="text-align: center">Dados do Cliente</h3>
+        <br>
+        <div class="row mt-3 margem">
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Nome do cliente:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= nota.nomeCliente %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Código do cliente:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= nota.codigoCliente %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>CPF do cliente:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= nota.cpfDoCliente %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Endereço do cliente:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= nota.enderecoCliente %></div>
+        </div>
+        <br>
+    </div>
+</div>
+<div class="container">
+    <div class="box">
+        <h3 style="text-align: center">Negócios Realizados</h3>
+        <br><br>
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+                <th><b>Negociação</b></th>
+                <th></th>
+                <th><b>CV</b></th>
+                <th></th>
+                <th><b>Tipo de mercado</b></th>
+                <th></th>
+                <th><b>Prazo</b></th>
+                <th></th>
+                <th><b>Especificação do título</b></th>
+                <th></th>
+                <th><b>Quantidade</b></th>
+                <th></th>
+                <th><b>Preço</b></th>
+                <th></th>
+                <th><b>Valor da operação</b></th>
+                <th></th>
+                <th><b>DC</b></th>
+            </tr>
+            <% for(let i = 0; i < nota.negocios.length; i++) { %>
+                <tr>
+                    <td><%= i + 1 + " - " %></td>
+                    <td></td>
+                    <td><%= nota.negocios[i].negociacao %></td>
+                    <td></td>
+                    <td><%= nota.negocios[i].cv %></td>
+                    <td></td>
+                    <td><%= nota.negocios[i].tipoDeMercado %></td>
+                    <td></td>
+                    <td><%= nota.negocios[i].prazo %></td>
+                    <td></td>
+                    <td><%= nota.negocios[i].especificacaoDoTitulo %></td>
+                    <td></td>
+                    <td><%= nota.negocios[i].quantidade %></td>
+                    <td></td>
+                    <td><%= formataNumero(nota.negocios[i].preco) %></td>
+                    <td></td>
+                    <td><%= formataNumero(nota.negocios[i].valorOperacao) %></td>
+                    <td></td>
+                    <td><%= nota.negocios[i].dc %></td>
+                </tr>
+            <% } %>
+        </table>
+        <br>
+    </div>
+</div>
+<div class="container">
+    <div class="box">
+        <h3 style="text-align: center">Resumo dos Negócios</h3>
+        <br>
+        <div class="row mt-3 margem">
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor da venda à vista:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;">
+                <%= formataNumero(nota.valorVendaAVista) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor líquido das operações:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;">
+                <%= formataNumero(nota.valorLiquidoDasOperacoes) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Taxa da liquidação:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.taxaDeLiquidacao) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor da compra a vista:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorCompraAVista) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor debentures:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorDebentures) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor das compras:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorCompras) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Taxa de registro:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.taxaDeRegistro) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor das vendas:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorVendas) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor total CBLC:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.totalCBLC) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor da operação à termo:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;">
+                <%= formataNumero(nota.valorOperacoesATermo) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor das operações com títulos públicos:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;">
+                <%= formataNumero(nota.valorOperacoesComTitulosPublicos) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Taxa de termo:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.taxaDeTermo) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor das operações:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorDasOperacoes) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Taxa ANA:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.taxaANA) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor emolumentos:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorEmolumentos) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor total da Bovespa:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorTotalBovespa) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor clearing:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorClearing) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor da execução:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorExecucao) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor da execução casa:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorExecucaoCasa) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor do ISS:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorISS) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor do IRRF sem operações base:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;">
+                <%= formataNumero(nota.valorIRRFSemOperacoesBase) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor outras bovespa:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorOutrasBovespa) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor total das despesas:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;">
+                <%= formataNumero(nota.valorTotalCorretagemDespesas) %></div>
+            <div class="col-6" style="text-align: left; display: inline-block;">
+                <li><b>Valor líquido:</b></li>
+            </div>
+            <div class="col-6" style="text-align: right; display: inline-block;"><%= formataNumero(nota.valorLiquido) %></div>
+        </div>
+        <br>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>

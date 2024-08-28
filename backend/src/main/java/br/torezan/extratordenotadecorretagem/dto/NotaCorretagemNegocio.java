@@ -1,4 +1,4 @@
-package br.torezan.extratordenotadecorretagem;
+package br.torezan.extratordenotadecorretagem.dto;
 
 import java.math.BigDecimal;
 
@@ -8,7 +8,6 @@ public class NotaCorretagemNegocio {
     private String tipoDeMercado;
     private String prazo;
     private String especificacaoDoTitulo;
-    private String observacao;
     private Integer quantidade;
     private BigDecimal preco;
     private BigDecimal valorOperacao;
@@ -84,14 +83,6 @@ public class NotaCorretagemNegocio {
 
     public void setEspecificacaoDoTitulo(String especificacaoDoTitulo) {
         this.especificacaoDoTitulo = especificacaoDoTitulo;
-    }
-
-    public String getObservacao() {
-        return observacao;
-    }
-
-    public void setObservacao(String observacao) {
-        this.observacao = observacao;
     }
 
 }

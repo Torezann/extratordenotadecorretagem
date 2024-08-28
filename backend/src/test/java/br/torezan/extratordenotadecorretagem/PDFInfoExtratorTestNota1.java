@@ -1,8 +1,11 @@
 package br.torezan.extratordenotadecorretagem;
 
+import br.torezan.extratordenotadecorretagem.dto.NotaCorretagem;
+import br.torezan.extratordenotadecorretagem.dto.NotaCorretagemNegocio;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -18,7 +21,60 @@ class PDFInfoExtratorTestNota1 {
         List<NotaCorretagem> notas = pdfInfoExtrator.extrairDadosNotasCorretagem(textoArquivo);
         assertFalse(notas.isEmpty());
         NotaCorretagem notaCorretagem = notas.get(0);
+        assertEquals(123456789, notaCorretagem.getCodigoCliente());
+        assertEquals("Neymar da Silva Santos Junior", notaCorretagem.getNomeCliente());
         assertEquals("321.654.987-01", notaCorretagem.getCpfDoCliente());
         assertEquals("QUADRA 900, 2 - 204-A 81110370 MACAE RIO DE Tel. (11) 985112957", notaCorretagem.getEnderecoCliente());
+
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorDebentures());
+        assertEquals(new BigDecimal("5569.0"), notaCorretagem.getValorVendaAVista());
+        assertEquals(new BigDecimal("5569.0"), notaCorretagem.getValorLiquidoDasOperacoes());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorCompraAVista());
+        assertEquals(new BigDecimal("1.39"), notaCorretagem.getTaxaDeLiquidacao());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorCompras());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getTaxaDeRegistro());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorVendas());
+        assertEquals(new BigDecimal("5567.61"), notaCorretagem.getTotalCBLC());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorOperacoesATermo());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorOperacoesComTitulosPublicos());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getTaxaDeTermo());
+        assertEquals(new BigDecimal("5569.0"), notaCorretagem.getValorDasOperacoes());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getTaxaANA());
+        assertEquals(new BigDecimal("0.27"), notaCorretagem.getValorEmolumentos());
+        assertEquals(new BigDecimal("0.27"), notaCorretagem.getValorTotalBovespa());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorClearing());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorExecucao());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorExecucaoCasa());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorISS());
+        assertEquals(new BigDecimal("0.27"), notaCorretagem.getValorIRRFSemOperacoesBase());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorOutrasBovespa());
+        assertEquals(new BigDecimal("0.0"), notaCorretagem.getValorTotalCorretagemDespesas());
+        assertEquals(new BigDecimal("5567.34"), notaCorretagem.getValorLiquido());
+
+        for (int i = 0; i < notaCorretagem.getNegocios().size(); i++) {
+            NotaCorretagemNegocio ncn = notaCorretagem.getNegocios().get(i);
+            if (i == 0) {
+                assertEquals("1-BOVESPA", ncn.getNegociacao());
+                assertEquals("V", ncn.getCv());
+                assertEquals("VISTA", ncn.getTipoDeMercado());
+                assertEquals(null, ncn.getPrazo());
+                assertEquals("LREN3 ON", ncn.getEspecificacaoDoTitulo());
+                assertEquals(400, ncn.getQuantidade());
+                assertEquals(new BigDecimal("13.26"), ncn.getPreco());
+                assertEquals(new BigDecimal("5304.0"), ncn.getValorOperacao());
+                assertEquals("C", ncn.getDc());
+            }
+            if (i == 1) {
+                assertEquals("1-BOVESPA", ncn.getNegociacao());
+                assertEquals("V", ncn.getCv());
+                assertEquals("VISTA", ncn.getTipoDeMercado());
+                assertEquals(null, ncn.getPrazo());
+                assertEquals("LREN3F ON", ncn.getEspecificacaoDoTitulo());
+                assertEquals(20, ncn.getQuantidade());
+                assertEquals(new BigDecimal("13.25"), ncn.getPreco());
+                assertEquals(new BigDecimal("265.0"), ncn.getValorOperacao());
+                assertEquals("C", ncn.getDc());
+            }
+        }
     }
 }

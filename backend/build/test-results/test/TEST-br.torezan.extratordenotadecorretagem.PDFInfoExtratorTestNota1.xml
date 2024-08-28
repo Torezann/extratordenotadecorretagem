@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.torezan.extratordenotadecorretagem.PDFInfoExtratorTestNota1" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-28T20:26:15" hostname="DESKTOP-VGINSHI" time="0.011">
+  <properties/>
+  <testcase name="testarNota1()" classname="br.torezan.extratordenotadecorretagem.PDFInfoExtratorTestNota1" time="0.011"/>
+  <system-out><![CDATA[2024-08-28T17:26:15.675-03:00  INFO 3692 --- [Extrator de Nota de Corretagem] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.torezan.extratordenotadecorretagem.PDFInfoExtratorTestNota1]: PDFInfoExtratorTestNota1 does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-28T17:26:15.676-03:00  INFO 3692 --- [Extrator de Nota de Corretagem] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.torezan.extratordenotadecorretagem.ExtratorDeNotaDeCorretagemApplication for test class br.torezan.extratordenotadecorretagem.PDFInfoExtratorTestNota1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

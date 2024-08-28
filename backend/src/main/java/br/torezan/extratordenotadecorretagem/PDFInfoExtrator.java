@@ -1,5 +1,8 @@
 package br.torezan.extratordenotadecorretagem;
 
+import br.torezan.extratordenotadecorretagem.dto.NotaCorretagem;
+import br.torezan.extratordenotadecorretagem.dto.NotaCorretagemNegocio;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,9 +10,11 @@ import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.time.LocalDate;
+import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.time.format.DateTimeParseException;
 
 public class PDFInfoExtrator {
 
@@ -87,7 +92,7 @@ public class PDFInfoExtrator {
         String negociacao = extrairPrimeiroToken(sb);
         String cv = extrairPrimeiroToken(sb);
         String tipoDeMercado = extrairSeEncontrar(sb, TIPOS_MERCADO);
-        String prazo = extrairPrimeiroToken(sb);
+        String prazo = extrairPrazoNegocio(sb);
         String especificacaoDoTitulo = sb.toString();
         NotaCorretagemNegocio negocio = new NotaCorretagemNegocio();
         negocio.setNegociacao(negociacao);
@@ -100,6 +105,30 @@ public class PDFInfoExtrator {
         negocio.setValorOperacao(toBigDecimal(valorOperacao));
         negocio.setDc(dc);
         notaCorretagem.getNegocios().add(negocio);
+    }
+
+    private String extrairPrazoNegocio(StringBuilder sb) {
+        int pos = sb.indexOf(" ");
+        String valor = null;
+        DateTimeFormatter dataNegocios = DateTimeFormatter.ofPattern("MM/yy");
+        if (pos != -1) {
+            String teste = sb.substring(0,pos);
+            if (isValidFormat(teste, dataNegocios)){
+                valor = teste;
+                sb.delete(0, pos + 1);
+            }
+        }
+        return valor;
+    }
+
+    private boolean isValidFormat(String teste, DateTimeFormatter dataNegocios) {
+        try {
+            YearMonth.parse(teste, dataNegocios);
+            return true;
+        } catch (DateTimeParseException e) {
+            return false;
+
+        }
     }
 
     private String extrairSeEncontrar(StringBuilder sb, String[] tiposMercado) {
@@ -377,4 +406,5 @@ public class PDFInfoExtrator {
     private LocalDate toLocalDate(String dataPregao) {
         return LocalDate.parse(dataPregao, dateTimeDDMMAAAA);
     }
+
 }
