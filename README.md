@@ -47,9 +47,9 @@ O projeto está organizado nas seguintes módulos:
 
    No terminal, entre no diretório do projeto e execute os seguintes comandos:
 
-      $ cd .\backend\
-      $ gradle clean build
-      $ java -jar .\build\libs\extratordenotadecorretagem.jar
+         $ cd .\backend\
+         $ gradle clean build
+         $ java -jar .\build\libs\extratordenotadecorretagem.jar
     
    Isso iniciará o servidor back-end na porta 8080.
 
@@ -57,8 +57,8 @@ O projeto está organizado nas seguintes módulos:
 
    Abra um novo terminal, entre no diretório do projeto e execute os seguintes comandos:
 
-       $ cd .\frontend\
-       $ node .\Index.js
+         $ cd .\frontend\
+         $ node .\Index.js
 
    Isso conectará o Front-end ao Back-end.
 
@@ -66,6 +66,6 @@ O projeto está organizado nas seguintes módulos:
 
      Abra o seu navegador e digite:
 
-       http://localhost:5000
+         http://localhost:5000
 
      Isso abrirá a aplicação para que você possa utilizar.
