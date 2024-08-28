@@ -27,7 +27,9 @@ O projeto está organizado nas seguintes módulos:
 
 ### Pré-requisitos
 
-- Java 17 instalado.
+- Java 17
+- Node 20
+- Gradle 8
 
 ### Passo a Passo
 
@@ -35,24 +37,32 @@ O projeto está organizado nas seguintes módulos:
 
    Clone o repositório ou baixe os arquivos do projeto.
 
-2. **Compilar e Executar o Back-end**
+2. **Configure o diretório de armazenamento de notas Json**
 
-   No terminal, navegue até o diretório do projeto e execute os seguintes comandos:
+   Altere o valor da propriedade "diretorio-de-notas" no arquivo "appliaction.properties" como você quiser, desde que seja um diretório válido e com direito de escrita para o usuário do sistema operacional que irá executar o back-end.
 
-      
+       \backend\src\main\resources\appliaction.properties
+
+3. **Compilar e Executar o Back-end**
+
+   No terminal, entre no diretório do projeto e execute os seguintes comandos:
+
+         $ cd .\backend\
+         $ gradle clean build
+         $ java -jar .\build\libs\extratordenotadecorretagem.jar
     
-   Isso iniciará o servidor na porta 12345.
+   Isso iniciará o servidor back-end na porta 8080.
 
-3. **Compilar e Executar o Front-end**
+4. **Compilar e Executar o Front-end**
 
-   Abra um novo terminal, navegue até o diretório do projeto e execute os seguintes comandos:
+   Abra um novo terminal, entre no diretório do projeto e execute os seguintes comandos:
 
        $ cd .\frontend\
        $ node .\Index.js
 
    Isso conectará o Front-end ao Back-end.
 
-4. **Acessar a aplicação pelo navegador**
+5. **Acessar a aplicação pelo navegador**
 
      Abra o seu navegador e digite:
 
