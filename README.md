@@ -58,11 +58,12 @@ O projeto está organizado nas seguintes módulos:
    Abra um novo terminal, entre no diretório do projeto e execute os seguintes comandos:
 
          $ cd .\frontend\
+         $ npm install
          $ node .\Index.js
 
    Isso conectará o Front-end ao Back-end.
 
-5. **Acessar a aplicação pelo navegador**
+6. **Acessar a aplicação pelo navegador**
 
      Abra o seu navegador e digite:
 
